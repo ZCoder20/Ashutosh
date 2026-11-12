@@ -1,0 +1,1190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification"
+content="y-p-SSRvchzmg773O_PLmERXbgzBfoDk9P8ViSMM-j8">
+
+<title>Ashutosh Tripathi | Distinguished Engineer</title>
+
+<meta name="description" content="Professional profile of Ashutosh Tripathi, Distinguished Engineer focused on banking technology, fraud architecture, artificial intelligence and research.">
+
+<style>
+:root {
+  --navy: #142d4e;
+  --blue: #285b91;
+  --light-blue: #edf3f9;
+  --text: #253449;
+  --muted: #718096;
+  --border: #e3e9f0;
+  --background: #f5f7fa;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* HEADER */
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 24px 5%;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.brand small {
+  display: block;
+  font-size: 11px;
+  color: #bdcde0;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: #e4edf7;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+nav a:hover { color: white; }
+
+/* PAGE LAYOUT */
+
+.container {
+  max-width: 1400px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 25px;
+  align-items: start;
+}
+
+main { min-width: 0; }
+
+.panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  color: var(--navy);
+  font-size: 21px;
+  margin: 0 0 18px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--blue);
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+.hero {
+  padding: 35px 30px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  color: var(--navy);
+  margin: 8px 0;
+}
+
+.hero h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--blue);
+  margin: 0 0 12px;
+}
+
+.hero p {
+  max-width: 750px;
+  color: var(--muted);
+}
+
+.hero-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 9px 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  background: var(--navy);
+  color: white;
+}
+
+.link-button.secondary {
+  background: var(--light-blue);
+  color: var(--navy);
+}
+
+/* EXPERTISE */
+
+.expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.tag {
+  background: var(--light-blue);
+  color: var(--navy);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* MY WORK */
+
+.work-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.work-categories button {
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.work-categories button.active,
+.work-categories button:hover {
+  background: var(--navy);
+  color: white;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.work-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  background: #fff;
+  transition: border-color .2s;
+}
+
+.work-card:hover {
+  border-color: #8ba9ca;
+}
+
+.work-icon {
+  font-size: 22px;
+}
+
+.work-card h3 {
+  font-size: 16px;
+  color: var(--navy);
+  margin: 10px 0 7px;
+}
+
+.work-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.work-card a {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.work-card a:hover { text-decoration: underline; }
+
+.work-status {
+  display: inline-block;
+  background: #edf3f9;
+  color: #375b81;
+  padding: 3px 8px;
+  font-size: 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+/* SPEAKING */
+
+.timeline-item {
+  border-left: 2px solid #c9d7e6;
+  padding: 0 0 18px 18px;
+  margin-left: 5px;
+}
+
+.timeline-item h3 {
+  font-size: 15px;
+  color: var(--navy);
+  margin: 0;
+}
+
+.timeline-item p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 5px 0;
+}
+
+/* NEWS SIDEBAR */
+
+.news-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  position: sticky;
+  top: 18px;
+}
+
+.news-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.news-heading h2 {
+  font-size: 18px;
+  color: var(--navy);
+  margin: 0;
+}
+
+.live {
+  color: #188653;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.news-description {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.news-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin: 17px 0;
+}
+
+.news-buttons button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #f5f7fa;
+  color: var(--navy);
+  padding: 10px 5px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.news-buttons button.active {
+  background: var(--navy);
+  color: white;
+  border-color: var(--navy);
+}
+
+.news-meta-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-list {
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.news-item {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-item a {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.news-item a:hover { color: var(--blue); }
+
+.news-item small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.news-message {
+  font-size: 12px;
+  color: var(--muted);
+  padding: 20px 0;
+}
+
+.refresh-button {
+  background: none;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 11px;
+}
+
+/* TICKER */
+
+.ticker-wrap {
+  background: var(--navy);
+  color: white;
+  overflow: hidden;
+  padding: 11px 0;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+.ticker-label {
+  background: #315b85;
+  padding: 11px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.ticker {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 45s linear infinite;
+  font-size: 12px;
+}
+
+.ticker:hover { animation-play-state: paused; }
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+@media(max-width: 950px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .news-panel {
+    position: static;
+  }
+
+  .news-list { max-height: 400px; }
+}
+
+@media(max-width: 550px) {
+  header { padding: 20px; }
+
+  nav { gap: 12px; }
+
+  .container { padding: 0 12px; }
+
+  .panel { padding: 19px; }
+
+  .hero { padding: 25px 20px; }
+
+  .hero h1 { font-size: 27px; }
+
+  .work-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+  <div class="header-inner">
+
+    <div class="brand">
+      ASHUTOSH TRIPATHI
+      <small>ENGINEERING · INNOVATION · RESEARCH</small>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">My Work</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<div class="container">
+
+<main>
+
+  <!-- ABOUT -->
+
+  <section class="hero" id="about">
+
+    <div class="eyebrow">Professional Profile</div>
+
+    <h1>Ashutosh Tripathi</h1>
+
+    <h3>Distinguished Engineer</h3>
+
+    <p>
+      I am a technology leader and Distinguished Engineer
+      with over 20 years of experience in financial services
+      and fintech. My work focuses on enterprise architecture,
+      banking fraud platforms, intelligent automation,
+      data engineering and emerging AI technologies.
+    </p>
+
+    <p>
+      I am particularly interested in how AI, data and
+      modern engineering practices can solve complex
+      challenges in financial services.
+    </p>
+
+    <div class="hero-links">
+
+      <a class="link-button"
+         href="https://www.linkedin.com/"
+         target="_blank" rel="noopener">
+         LinkedIn Profile
+      </a>
+
+      <a class="link-button secondary"
+         href="https://github.com/"
+         target="_blank" rel="noopener">
+         GitHub
+      </a>
+
+      <a class="link-button secondary"
+         href="#work">
+         Explore My Work
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERTISE -->
+
+  <section class="panel">
+
+    <h2 class="section-title">Areas of Expertise</h2>
+
+    <div class="expertise">
+
+      <span class="tag">Enterprise Architecture</span>
+      <span class="tag">Banking Technology</span>
+      <span class="tag">Fraud & Risk Management</span>
+      <span class="tag">Artificial Intelligence</span>
+      <span class="tag">Generative AI</span>
+      <span class="tag">Agentic AI</span>
+      <span class="tag">Data Engineering</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Distributed Systems</span>
+      <span class="tag">Cloud Architecture</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- MY WORK -->
+
+  <section class="panel" id="work">
+
+    <div class="eyebrow">Research & Contributions</div>
+
+    <h2 class="section-title">My Work</h2>
+
+    <p style="font-size:13px;color:#718096">
+      A collection of my intellectual contributions,
+      research, technical writing and engineering work.
+    </p>
+
+    <div class="work-categories">
+
+      <button class="active"
+        onclick="filterWork('all',this)">All Work</button>
+
+      <button onclick="filterWork('patent',this)">
+        Patents
+      </button>
+
+      <button onclick="filterWork('paper',this)">
+        Research Papers
+      </button>
+
+      <button onclick="filterWork('book',this)">
+        Books
+      </button>
+
+      <button onclick="filterWork('article',this)">
+        Articles
+      </button>
+
+      <button onclick="filterWork('project',this)">
+        Projects
+      </button>
+
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+
+      <!-- PATENT -->
+
+      <article class="work-card" data-category="patent">
+
+        <div class="work-icon">⚖</div>
+
+        <div class="work-status">Patent Application</div>
+
+        <h3>Patent & Intellectual Property</h3>
+
+        <p>
+          Technical innovation in enterprise banking
+          and rule-engine architecture.
+        </p>
+
+        <a href="https://patents.google.com/"
+           target="_blank" rel="noopener">
+           View Patent Details →
+        </a>
+
+      </article>
+
+
+      <!-- RESEARCH PAPERS -->
+
+      <article class="work-card" data-category="paper">
+
+        <div class="work-icon">📄</div>
+
+        <div class="work-status">Research Publications</div>
+
+        <h3>IEEE Research Papers</h3>
+
+        <p>
+          Research contributions in technology,
+          data science and emerging engineering areas.
+        </p>
+
+        <a href="https://ieeexplore.ieee.org/"
+           target="_blank" rel="noopener">
+           View Research Papers →
+        </a>
+
+      </article>
+
+
+      <!-- BOOKS -->
+
+      <article class="work-card" data-category="book">
+
+        <div class="work-icon">📚</div>
+
+        <div class="work-status">Books & Chapters</div>
+
+        <h3>Books and Technical Chapters</h3>
+
+        <p>
+          Books, technical chapters and contributions
+          to professional knowledge sharing.
+        </p>
+
+        <a href="#" target="_blank">
+           Explore Books →
+        </a>
+
+      </article>
+
+
+      <!-- ARTICLES -->
+
+      <article class="work-card" data-category="article">
+
+        <div class="work-icon">✍</div>
+
+        <div class="work-status">Technical Writing</div>
+
+        <h3>Articles & Industry Insights</h3>
+
+        <p>
+          Perspectives on AI, banking fraud,
+          financial technology and engineering.
+        </p>
+
+        <a href="#" target="_blank">
+           Read Articles →
+        </a>
+
+      </article>
+
+
+      <!-- PROJECTS -->
+
+      <article class="work-card" data-category="project">
+
+        <div class="work-icon">⚙</div>
+
+        <div class="work-status">Engineering Innovation</div>
+
+        <h3>Enterprise Architecture & Innovation</h3>
+
+        <p>
+          Technical work involving scalable banking
+          platforms, fraud architecture and automation.
+        </p>
+
+        <a href="#" target="_blank">
+           Explore Projects →
+        </a>
+
+      </article>
+
+
+      <!-- PRESENTATIONS -->
+
+      <article class="work-card" data-category="project">
+
+        <div class="work-icon">🎤</div>
+
+        <div class="work-status">Knowledge Sharing</div>
+
+        <h3>Presentations & Technical Talks</h3>
+
+        <p>
+          Conference sessions, panel discussions
+          and technical presentations.
+        </p>
+
+        <a href="#" target="_blank">
+           View Presentations →
+        </a>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- SPEAKING -->
+
+  <section class="panel" id="speaking">
+
+    <div class="eyebrow">Industry Engagement</div>
+
+    <h2 class="section-title">Speaking & Recognition</h2>
+
+    <div class="timeline-item">
+      <h3>Conference Speaking & Panels</h3>
+      <p>
+        Professional speaking engagements, technology
+        forums and discussions on AI and financial services.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Industry Recognition</h3>
+      <p>
+        Professional recognition, innovation awards
+        and contributions to engineering communities.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Technical Community Contributions</h3>
+      <p>
+        Knowledge sharing, engineering leadership,
+        mentoring and architecture discussions.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATION -->
+
+  <section class="panel" id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline-item">
+      <h3>Master's Degree – Data Science</h3>
+      <p>Data Science and Machine Learning</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Bachelor's Degree – Computer Science</h3>
+      <p>Computer Science and Engineering</p>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="panel" id="contact">
+
+    <h2 class="section-title">Connect With Me</h2>
+
+    <p style="font-size:13px;color:#718096">
+      I welcome conversations around AI, banking technology,
+      enterprise architecture, research and industry innovation.
+    </p>
+
+    <div class="hero-links">
+
+      <a class="link-button"
+         href="https://www.linkedin.com/"
+         target="_blank" rel="noopener">
+         LinkedIn
+      </a>
+
+      <a class="link-button secondary"
+         href="mailto:YOUR_EMAIL@example.com">
+         Email Me
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- RIGHT SIDEBAR: LIVE NEWS -->
+
+<aside class="news-panel">
+
+  <div class="news-heading">
+
+    <h2>Industry Intelligence</h2>
+
+    <span class="live">● LIVE</span>
+
+  </div>
+
+  <div class="news-description">
+    Latest developments in AI, fraud and banking technology.
+  </div>
+
+
+  <div class="news-buttons">
+
+    <button class="active"
+      onclick="loadNews('ai',this)">
+      AI NEWS
+    </button>
+
+    <button onclick="loadNews('fraud',this)">
+      FRAUD NEWS
+    </button>
+
+    <button onclick="loadNews('bank',this)">
+      BANKING NEWS
+    </button>
+
+    <button onclick="loadNews('top',this)">
+      TOP 3 TODAY
+    </button>
+
+  </div>
+
+
+  <div class="news-meta-header">
+
+    <span id="newsCategory">LATEST AI NEWS</span>
+
+    <button class="refresh-button"
+      onclick="refreshNews()">
+      ↻ Refresh
+    </button>
+
+  </div>
+
+
+  <div class="news-list" id="newsList">
+
+    <div class="news-message">
+      Loading latest headlines...
+    </div>
+
+  </div>
+
+
+  <div class="news-description" id="lastUpdated">
+    Connecting to news sources...
+  </div>
+
+</aside>
+
+</div>
+
+
+<!-- HEADLINE TICKER -->
+
+<div class="ticker-wrap">
+
+  <span class="ticker-label">LATEST UPDATES</span>
+
+  <span class="ticker" id="tickerText">
+    Loading latest industry headlines...
+  </span>
+
+</div>
+
+
+<footer>
+
+  © <span id="year"></span> Ashutosh Tripathi.
+
+  Personal professional website.
+
+  <br><br>
+
+  <a href="#about">Back to Top ↑</a>
+
+</footer>
+
+
+<script>
+
+/* ===================================
+   MY WORK FILTER
+=================================== */
+
+function filterWork(category, button) {
+
+  document.querySelectorAll(".work-categories button")
+    .forEach(b => b.classList.remove("active"));
+
+  button.classList.add("active");
+
+  document.querySelectorAll(".work-card")
+    .forEach(card => {
+
+      card.style.display =
+        category === "all" ||
+        card.dataset.category === category
+        ? "block" : "none";
+
+    });
+
+}
+
+
+/* ===================================
+   RSS NEWS CONFIGURATION
+=================================== */
+
+// Google News RSS search feeds.
+// You can change the search terms anytime.
+
+const feeds = {
+
+  ai:
+  "https://news.google.com/rss/search?q=Artificial+Intelligence+OR+Generative+AI+OR+Agentic+AI&hl=en-US&gl=US&ceid=US:en",
+
+  fraud:
+  "https://news.google.com/rss/search?q=Banking+Fraud+OR+Financial+Fraud+OR+Deepfake+Fraud+OR+Payment+Fraud&hl=en-US&gl=US&ceid=US:en",
+
+  bank:
+  "https://news.google.com/rss/search?q=Banking+Technology+OR+Fintech+OR+Digital+Banking+OR+Payments&hl=en-US&gl=US&ceid=US:en"
+
+};
+
+// RSS conversion service.
+// For production, consider hosting your own RSS proxy.
+
+const rssProxy =
+  "https://api.rss2json.com/v1/api.json?rss_url=";
+
+let allNews = [];
+let currentCategory = "ai";
+
+
+/* ===================================
+   FETCH RSS
+=================================== */
+
+async function getFeed(category) {
+
+  try {
+
+    const response = await fetch(
+      rssProxy + encodeURIComponent(feeds[category])
+    );
+
+    if (!response.ok) {
+      throw new Error("RSS request failed");
+    }
+
+    const data = await response.json();
+
+    if (data.status !== "ok") {
+      throw new Error("Invalid RSS response");
+    }
+
+    return (data.items || []).map(item => ({
+
+      title: item.title || "Untitled",
+      link: item.link || "",
+      date: item.pubDate || "",
+      source: item.author || "News source",
+      category: category
+
+    }));
+
+  } catch (error) {
+
+    console.error("Feed error:", category, error);
+
+    return [];
+
+  }
+
+}
+
+
+/* ===================================
+   REFRESH ALL NEWS
+=================================== */
+
+async function refreshNews() {
+
+  const status =
+    document.getElementById("lastUpdated");
+
+  status.innerText = "Refreshing news feeds...";
+
+  const [ai, fraud, bank] = await Promise.all([
+
+    getFeed("ai"),
+    getFeed("fraud"),
+    getFeed("bank")
+
+  ]);
+
+  allNews = [...ai, ...fraud, ...bank];
+
+  // Remove duplicate links.
+
+  allNews = Array.from(
+    new Map(allNews.map(item => [
+      item.link, item
+    ])).values()
+  );
+
+  // Newest published first.
+
+  allNews.sort((a,b) =>
+    new Date(b.date) - new Date(a.date)
+  );
+
+  status.innerText =
+    "Last updated: " + new Date().toLocaleTimeString();
+
+  loadNews(
+    currentCategory,
+    document.querySelector(
+      `.news-buttons button[onclick*="'${currentCategory}'"]`
+    )
+  );
+
+  // Ticker headlines.
+
+  const ticker = allNews
+    .slice(0, 15)
+    .map(item => item.title)
+    .join("   •   ");
+
+  document.getElementById("tickerText").innerText =
+    ticker || "No headlines currently available.";
+
+}
+
+
+/* ===================================
+   DISPLAY NEWS
+=================================== */
+
+function loadNews(category, button) {
+
+  currentCategory = category;
+
+  document.querySelectorAll(".news-buttons button")
+    .forEach(b => b.classList.remove("active"));
+
+  if (button) {
+    button.classList.add("active");
+  }
+
+  const list = document.getElementById("newsList");
+
+  const heading = document.getElementById("newsCategory");
+
+  heading.innerText = category === "top"
+    ? "TOP 3 LATEST HEADLINES"
+    : category.toUpperCase() + " NEWS";
+
+  let results = [];
+
+  if (category === "top") {
+
+    results = allNews.slice(0,3);
+
+  } else {
+
+    results = allNews.filter(
+      item => item.category === category
+    );
+
+  }
+
+  list.innerHTML = "";
+
+  if (!results.length) {
+
+    list.innerHTML =
+      '<div class="news-message">' +
+      'No headlines available. Try refreshing later.' +
+      '</div>';
+
+    return;
+
+  }
+
+  results.slice(0,25).forEach(item => {
+
+    const article = document.createElement("div");
+    article.className = "news-item";
+
+    const link = document.createElement("a");
+
+    link.href = item.link;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = item.title;
+
+    const meta = document.createElement("small");
+
+    const date = item.date
+      ? new Date(item.date).toLocaleString()
+      : "Date unavailable";
+
+    meta.textContent =
+      item.category.toUpperCase() + " | " + date;
+
+    article.appendChild(link);
+    article.appendChild(meta);
+
+    list.appendChild(article);
+
+  });
+
+}
+
+
+/* ===================================
+   INITIALIZATION
+=================================== */
+
+document.getElementById("year").innerText =
+  new Date().getFullYear();
+
+refreshNews();
+
+// Refresh feeds every 15 minutes.
+
+setInterval(refreshNews, 15 * 60 * 1000);
+
+</script>
+
+</body>
+</html>
