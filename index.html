@@ -1,10 +1,385 @@
-<html><head>
-  <meta name="google-site-verification" content="y-p-SSRvchzmg773O_PLmERXbgzBfoDk9P8ViSMM-j8" />
-  <title>Ashutosh Triapthi</title></head>
-<body><B>Ashutosh Tripathi<br/><br/></B>
-<p>Ashutosh Tripathi, Distinguished Engineer with 20 years of work experience in fintech industry.<br>
-<br/>
-  <p>Skill set - </p>
-</p>
-<p>He holds mmaster degree in Data science and Machine learning</p></body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification"
+content="y-p-SSRvchzmg773O_PLmERXbgzBfoDk9P8ViSMM-j8" />
+
+<title>Ashutosh Tripathi | Distinguished Engineer</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #253247;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 35px auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.profile, .news-panel {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+
+h1 { color: #17365d; margin-top: 0; }
+
+h2 {
+  color: #17365d;
+  font-size: 20px;
+}
+
+.subtitle { color: #64748b; }
+
+.news-panel { padding: 20px; }
+
+.news-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.news-buttons button {
+  border: 0;
+  padding: 11px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eaf0f8;
+  color: #17365d;
+  font-weight: bold;
+}
+
+.news-buttons button.active {
+  background: #17365d;
+  color: white;
+}
+
+.news-list {
+  height: 410px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.news-item {
+  padding: 13px 0;
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.news-item a {
+  color: #234c79;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.news-item a:hover { text-decoration: underline; }
+
+.news-meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #8994a3;
+}
+
+.status {
+  font-size: 12px;
+  color: #16834b;
+}
+
+.ticker {
+  margin-top: 15px;
+  background: #17365d;
+  color: white;
+  padding: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 6px;
+}
+
+.ticker span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 35s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media(max-width: 750px) {
+  .container { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE: PROFILE -->
+
+  <section class="profile">
+
+    <h1>Ashutosh Tripathi</h1>
+
+    <h3>Distinguished Engineer</h3>
+
+    <p class="subtitle">
+      Banking Technology | Enterprise Architecture |
+      Artificial Intelligence
+    </p>
+
+    <hr>
+
+    <h2>About Me</h2>
+
+    <p>
+      Ashutosh Tripathi is a Distinguished Engineer with
+      over 20 years of experience in the fintech industry,
+      specializing in enterprise technology, banking,
+      fraud platforms and large-scale architecture.
+    </p>
+
+    <h2>Areas of Expertise</h2>
+
+    <ul>
+      <li>Enterprise Architecture and Distributed Systems</li>
+      <li>Banking Fraud and Risk Management</li>
+      <li>Artificial Intelligence and Generative AI</li>
+      <li>Agentic AI and Intelligent Automation</li>
+      <li>Data Science and Machine Learning</li>
+      <li>Cloud Architecture and Data Engineering</li>
+    </ul>
+
+    <h2>Education</h2>
+
+    <p>
+      Master's Degree in Data Science and Machine Learning
+    </p>
+
+    <p>
+      Bachelor's Degree in Computer Science
+    </p>
+
+    <h2>Technology Interests</h2>
+
+    <p>
+      AI Agents | LLM | Python | Java | AWS |
+      Databricks | Snowflake | Generative AI
+    </p>
+
+  </section>
+
+
+  <!-- RIGHT SIDE: RSS NEWS -->
+
+  <aside class="news-panel">
+
+    <h2>📰 Technology & Industry News</h2>
+
+    <div class="status" id="status">
+      Loading latest headlines...
+    </div>
+
+    <div class="news-buttons">
+
+      <button class="active" onclick="loadNews('ai',this)">
+        AI News
+      </button>
+
+      <button onclick="loadNews('fraud',this)">
+        Fraud News
+      </button>
+
+      <button onclick="loadNews('bank',this)">
+        Banking News
+      </button>
+
+      <button onclick="loadNews('top',this)">
+        Top 3 Today
+      </button>
+
+    </div>
+
+    <div class="news-list" id="newsList">
+      Loading news...
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- HEADLINE SCROLLING TICKER -->
+
+<div class="ticker">
+  <span id="tickerText">
+    Latest AI, fraud and banking industry news...
+  </span>
+</div>
+
+
+<script>
+
+// Google News RSS feeds
+
+const feeds = {
+
+  ai:
+  "https://news.google.com/rss/search?q=Artificial+Intelligence+OR+Agentic+AI&hl=en-US&gl=US&ceid=US:en",
+
+  fraud:
+  "https://news.google.com/rss/search?q=Banking+fraud+OR+financial+fraud+OR+deepfake+fraud&hl=en-US&gl=US&ceid=US:en",
+
+  bank:
+  "https://news.google.com/rss/search?q=Banking+technology+OR+fintech+OR+digital+banking&hl=en-US&gl=US&ceid=US:en"
+
+};
+
+// RSS to JSON service.
+// For production, use your own server-side RSS proxy.
+
+const proxy = "https://api.rss2json.com/v1/api.json?rss_url=";
+
+let allNews = [];
+
+async function getFeed(category) {
+
+  try {
+
+    const response = await fetch(
+      proxy + encodeURIComponent(feeds[category])
+    );
+
+    if (!response.ok) throw new Error("RSS request failed");
+
+    const data = await response.json();
+
+    if (data.status !== "ok") throw new Error("Feed unavailable");
+
+    return (data.items || []).map(item => ({
+      title: item.title,
+      link: item.link,
+      date: item.pubDate,
+      source: item.author || "News source",
+      category: category
+    }));
+
+  } catch (error) {
+
+    console.error(category, error);
+    return [];
+
+  }
+
+}
+
+
+async function refreshNews() {
+
+  const [ai, fraud, bank] = await Promise.all([
+    getFeed("ai"),
+    getFeed("fraud"),
+    getFeed("bank")
+  ]);
+
+  allNews = [...ai, ...fraud, ...bank];
+
+  allNews.sort((a,b) =>
+    new Date(b.date) - new Date(a.date)
+  );
+
+  document.getElementById("status").innerText =
+    "Last updated: " + new Date().toLocaleTimeString();
+
+  loadNews("ai", document.querySelector(".news-buttons button"));
+
+  const headlines = allNews
+    .slice(0, 10)
+    .map(item => item.title)
+    .join("  •  ");
+
+  document.getElementById("tickerText").innerText =
+    headlines || "No headlines currently available";
+
+}
+
+
+function loadNews(category, button) {
+
+  document.querySelectorAll(".news-buttons button")
+    .forEach(btn => btn.classList.remove("active"));
+
+  if (button) button.classList.add("active");
+
+  let results;
+
+  if (category === "top") {
+    results = allNews.slice(0, 3);
+  } else {
+    results = allNews.filter(item =>
+      item.category === category
+    );
+  }
+
+  const list = document.getElementById("newsList");
+
+  list.innerHTML = "";
+
+  if (!results.length) {
+    list.innerText = "No news available. Please try again later.";
+    return;
+  }
+
+  results.slice(0, 20).forEach(item => {
+
+    const article = document.createElement("div");
+    article.className = "news-item";
+
+    const link = document.createElement("a");
+    link.href = item.link;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = item.title;
+
+    const meta = document.createElement("span");
+    meta.className = "news-meta";
+
+    meta.textContent =
+      item.category.toUpperCase() + " | " +
+      new Date(item.date).toLocaleString();
+
+    article.appendChild(link);
+    article.appendChild(meta);
+
+    list.appendChild(article);
+
+  });
+
+}
+
+
+// Initial load
+refreshNews();
+
+// Refresh every 15 minutes
+setInterval(refreshNews, 15 * 60 * 1000);
+
+</script>
+
+</body>
 </html>
